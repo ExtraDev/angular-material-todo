@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Status, Task } from './common/models/task';
 import { Observable } from 'rxjs';
 import { TodoService } from './common/todo.service';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
     selector: 'app-root',
@@ -20,7 +20,6 @@ export class AppComponent {
     constructor(private todosService: TodoService) { }
 
     public createTodo(): void {
-        console.log(this.nameControl.value);
         this.todosService.createTodo$({
             id: 0,
             name: this.nameControl.value || ' ',

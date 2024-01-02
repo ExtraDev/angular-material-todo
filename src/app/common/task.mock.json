@@ -3,12 +3,12 @@
     {
       "id": 1,
       "name": "Me préparer mentalement",
-      "status": "Todo"
+      "status": "Done"
     },
     {
       "id": 2,
       "name": "Deuxième todo",
-      "status": "In Progress"
+      "status": "Done"
     }
   ]
 }
