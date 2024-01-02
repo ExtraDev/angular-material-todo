@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    margin-top: 40px;
+
+    .todo-container {
+        padding-top: 50px;
+    }
+
+    .todo-form {
+        width: 100%;
+        height: auto;
+
+        .mat-input {
+            width: 100%;
+        }
+    }
+}

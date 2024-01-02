@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-content>
+        {{task?.name}}
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button *ngIf="task?.status === 'Todo'" mat-raised-button (click)="changeState()"
+            color="primary">{{task?.status}}</button>
+
+        <button *ngIf="task?.status === 'In Progress'" mat-raised-button (click)="changeState()"
+            color="warn">{{task?.status}}</button>
+
+        <button *ngIf="task?.status === 'Done'" mat-raised-button (click)="changeState()"
+            color="accent">{{task?.status}}</button>
+
+        <button mat-raised-button (click)="deleteTodo()">
+            Delete
+        </button>
+    </mat-card-actions>
+</mat-card>
